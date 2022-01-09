@@ -10,19 +10,22 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     
-    <Container>
-      <Grid container>
-        <Grid item lg={3} md={4} sm={12} xs={12}  style={{backgroundColor:"red"}}>
-          <Profile />
+    <Container className={'top_60'}>
+      <Grid container spacing={5}>
+        <Grid item lg={3} md={4} sm={12} xs={12} >
+         <Profile />
         </Grid>
-        <Grid item xs style={{backgroundColor:"green"}}> 
-          <Header />
+        <Grid item xs > 
           <Router>
-            <Routes>
+          <Header />
+          <div className='main-content'>
+          <Routes>
               <Route path = "/portfolio" element = { <Portfolio/> } />
               <Route path = "/resume" element = { <Resume/> } />
             </Routes> 
-          </Router>
+
+          </div>
+                      </Router>
          
           <Footer />
         </Grid>

@@ -1,0 +1,42 @@
+
+.timeline{
+    padding: 0;
+}
+ .timeline .timeline_header{
+     padding-top: 7px;
+ }
+ .timeline .timeline_firstitem{
+     min-height: 80px;
+ }
+ .timeline .MuiTimelineItem-root{
+     min-height: 0px;
+ }
+
+ .timeline .MuiTimelineItem-missingOppositeContent:before{
+     display: none;
+ }
+  
+ .timeline .timeline_dot_header{
+     color:black ;
+     background-color: rgb(255, 223, 223);
+     font-size: small;
+     padding: 10px;
+     font-family: 'Abril Fatface', cursive;
+ }
+  .timeline .timeline_dot{
+      color: rgb(255, 255, 255);
+      border-color: #303C6C;
+      padding: 2px;
+  }
+ .timeline .separator_padding{
+     padding-left: 18px;
+ }
+
+ .timeline .MuiTimelineConnector-root{
+     background-color: #303C6C;
+ }
+
+ .timeline .timeline_dot_header > .MuiSvgIcon-root{
+     font-size: 20px;
+     color:  #303C6C;
+ }

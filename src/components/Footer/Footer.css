@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&display=swap');
+
+.footer{
+    font-family: 'Lobster', cursive;
+    background-color: #D2FDFF;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    border-radius: 8px;
+    padding: 20px 25px;
+}
+.footer .footer_copyright{
+    font-family: 'Lobster', cursive;
+    font-size: small;
+    text-align: end;
+    color: rgb(14, 13, 13);
+}
+.footer .footer_copyright > a{
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
