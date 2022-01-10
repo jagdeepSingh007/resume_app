@@ -195,7 +195,7 @@ const Resume = () => {
                  </Grid>
              </Grid>
 
-         <Grid item xs={12}>
+         <Grid item xs={6}>
              <Grid container>
                  {Object.keys(resumeData.socials).map( (key)=>(
                      <Grid item>
