@@ -15,7 +15,7 @@ const Resume = () => {
     return (
           <>
  {/* about me*/}
-<Grid container className='section pb_45 pt_45'>
+ <Grid container className='section pb_45 pt_45'>
     <Grid item className='section_title mb_30'>
         <span></span>
         <h6  className='section_title_text'> About Me</h6>
@@ -109,9 +109,9 @@ const Resume = () => {
             </Grid>
     </Grid>
 
-</Grid>
-{/*skiils*/}
-<Grid container className='section graybg pb_45 p_50 '>
+ </Grid>
+ {/*skiils*/}
+ <Grid container className='section graybg pb_45 p_50 '>
     <Grid item xs={12}>
         
         <Grid container justify='space-between'spacing={3}>
@@ -134,9 +134,8 @@ const Resume = () => {
             </Grid> 
     </Grid>
     </Grid>
-{/* contact*/}
-
-<Grid container className='section pt_45 pb_45'>
+ { /* contact*/}
+ <Grid container className='section pt_45 pb_45'>
     {/* contact form*/}
     <Grid item xs={12} lg={7}>
         <Grid container>
@@ -152,12 +151,12 @@ const Resume = () => {
                     <Grid item  xs={12} sm={6}>
                         <TextField fullWidth  name='e-mail' label="E-Mail"/>
                     </Grid>
-                    <Grid item  xs={12} sm={6}>
+                   {/* <Grid item  xs={12} sm={6}>
                         <TextField fullWidth  name='phone' label="Phone" multiline rows={1}/>
                     </Grid>
                     <Grid item  xs={12} sm={6}>
                         <TextField fullWidth  name='Address' label="Address" multiline rows={1}/>
-                    </Grid>
+                </Grid>*/}
                     <Grid item  xs={12} >
                         <TextField fullWidth  name='message' label="Message" multiline rows={3}/>
                     </Grid>
@@ -168,8 +167,54 @@ const Resume = () => {
             </Grid>
         </Grid>
     </Grid>
+
+{/* contact information*/}
+<Grid item xs={12} lg={5}>
+    <Grid container>
+        <Grid item  className='section_title mb_30'>
+            <span></span>
+            <h6 className='section_title_text'>Contact information</h6>
+
+        </Grid>
+         <Grid item xs={12}>
+             <Grid container spacing={2}>
+                 <Grid item xs={12}>
+                     <Typography className='contactInfo_item'>
+                         <span> Address</span>{resumeData.address}
+                     </Typography>
+                 </Grid>
+                 <Grid item xs={12}>
+                     <Typography className='contactInfo_item'>
+                         <span> phone:</span>{resumeData.phone}
+                     </Typography>
+                 </Grid>
+                 <Grid item xs={12}>
+                     <Typography className='contactInfo_item'>
+                         <span> E-mail</span>{resumeData.email}
+                     </Typography>
+                 </Grid>
+             </Grid>
+
+         <Grid item xs={12}>
+             <Grid container>
+                 {Object.keys(resumeData.socials).map( (key)=>(
+                     <Grid item>
+                         <a href={resumeData.socials[key].link}>
+                             {resumeData.socials[key].icon}
+                             </a>
+                     </Grid>
+                 ))}
+             </Grid>
+         </Grid>
+          
+
+
+    </Grid>
 </Grid>
 
+
+</Grid>
+</Grid>
 
 </>
 );
