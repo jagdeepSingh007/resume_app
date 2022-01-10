@@ -5,33 +5,51 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-// import "./Timeline.css";
+ import WorkIcon from '@material-ui/icons/Work';
+import "./Timeline.css";
+import { Typography } from '@material-ui/core';
 
-const CustomTimeline = () => {
+const CustomTimeline = ({title,Icons,children}) => {
     return (
-        <Timeline>
-        <TimelineItem>
+        <Timeline className={'timeline'}>
+          {/* item header */}
+        <TimelineItem className={" timeline_firstitem"}>
           <TimelineSeparator>
-            <TimelineDot />
+            <TimelineDot className={"timeline_dot_header"} >
+               {<WorkIcon />} 
+              </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>Eat</TimelineContent>
+          <TimelineContent>
+           <Typography variant='h6' className={"timeline_header"}>
+             {title}
+           </Typography>
+          
+          </TimelineContent>
         </TimelineItem>
+
+
+{children}
+
+{/* remaining heaDER */}
         <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>Code</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-          </TimelineSeparator>
-          <TimelineContent>Sleep</TimelineContent>
-        </TimelineItem>
-      </Timeline>
-    )
-}
+         < CustomTimelineSeparator />
+           </TimelineItem>
+
+        
+        </Timeline>
+    );
+};
+
+export const CustomTimelineSeparator=()=>(
+  <TimelineSeparator className={"separator_padding"}>
+
+  <TimelineDot variant={"outlined"} className={"timeline_dot"} />
+  <TimelineConnector />
+  </TimelineSeparator>
+
+);
+
 
 export default CustomTimeline;
+ 

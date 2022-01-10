@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;700&family=Lobster&family=Open+Sans+Condensed:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;700&family=Lobster&family=Open+Sans+Condensed:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;700&family=EB+Garamond:wght@400;500&family=Lobster&family=Open+Sans+Condensed:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+
+/*aboutmesection*/
+.aboutme_text{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font: smaller;
+    line-height: 22px;
+    white-space: pre-line;
+
+}
+/* end of about me section*/
+
+/* timeline section */
+.resume_timeline .timeline_content .timeline_title{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+}   
+.resume_timeline .timeline_content .timeline_date{
+    color: #e60909;
+
+}
+.resume_timeline .timeline_content .timeline_description{
+    color: black;
+    font-size: 15px;
+    margin-top: 6px;
+    font-family: 'EB Garamond', serif;
+
+}
+/* end of timeline description*/ 
+
+/*service*/
+
+.service{
+    height: 100%;
+    text-align: center;
+   
+}
+.service .service_title{
+font-size: 16px;
+font-weight: 900;
+line-height: 35px;
+text-align: center;
+font-family: 'EB Garamond', serif;
+}
+.service .service_description{
+    color: black;
+    border-color:red ;
+    margin-right: 5px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    
+}
+.service_icon > .MuiSvgIcon-root { 
+    font-size: 46px;
+    margin-left: 0;
+    font-weight: 300;
+    color:  #303C6C;
+}
+.section .section_title_text{
+    margin-bottom: 30px;
+    color:  #303C6C;
+    font-family: 'EB Garamond', serif;
+}
+
+
+/*end of service*/
+
+/*skills*/
+
+ .skill{
+    padding: 20px;
+    min-height: 146px;
+    height: 100%;
+    border: 1px dashed  #303C6C;
+     
+}
+.skill .skill_title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 35px;
+    color:  #303C6C;
+    font-family: 'Abril Fatface', cursive;  
+    
+}
+.skill .skill_description{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: 'EB Garamond', serif;
+
+}
+.skill .skill_description .timeline_dot{
+    border-color:  #303C6C;
+    padding: 2px;
+    margin-right: 5px;
+    
+}
+
+.graybg{
+    background-color: #E6E6E6;
+    
+}
+.heading{
+       
+    font-size: x-large;
+    color:  #303C6C;
+
+font-weight: 600;
+padding: 8px;
+text-decoration: underline;
+}
+
+/*endofskills*/
+.section_title .section_title_text{
+    margin-top: 20px;
+    padding: 10px;
+}

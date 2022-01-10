@@ -1,10 +1,10 @@
+
 .profile{
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 6px;
     width: 100%;
     display: inline-block;
 }
-
 .profile_name {
 line-height: 18px;
 padding: 20px;
@@ -16,17 +16,57 @@ padding: 20px;
     font-weight: bold;
 }
 
-.profile_name .name .title {
+.profile_name   .title {
     font-size: 13px;
-    color: #777;
+    color: black;
 }
 
 .profile_image{
     margin-top: -10px;
+    margin-left: 20px;
     -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
     clip-path:  polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
 }
 
 .profile_image img{
-    width: 100%; 
+    width: 80%;
+    padding-left: 10px;
+}
+
+.profile_information{
+    top: 0;
+    left: 0px;
+    margin: -40px 10px 30px;
+    color: #303C6C;
+    font-weight: 600;
+}
+
+.profile_information .timeline .timeline_content{
+    margin-top: 2px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    color: #303C6C;
+}
+
+.timelineItem_text{
+    font-weight: 900;
+    text-decoration: none;
+    font-size:  13.5px;
+    color: black;
+
+
+}
+.timelineItem_text > span{
+    color: #303C6C;
+}
+.timeline_content .timelineItem_text > a{
+    font-size: 80px;
+}
+
+.profile .button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
 }
